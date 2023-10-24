@@ -18,13 +18,13 @@ const HomePage = () => {
                                         Tom Barthelmeh
                                     </h1>
 
-                                    <p className="font-display tracking-tight text-gray-900">
+                                    <p className="font-display tracking-tight text-lg">
                                         Software Engineering student at UC
                                     </p>
                                 </div>
 
                                 <div className="flex flex-col items-center justify-center my-12 sm:my-14 md:my-20">
-                                    <a>
+                                    <a href="../storage/Tom_Barthelmeh_Resume.pdf" download="Tom_Barthelmeh_Resume.pdf">
                                         <button className="relative animate-slide-down rounded font-bold font-display [animation-delay:1.5s] before:absolute before:border-black before:left-0 before:top-0 before:h-full before:w-full before:border-b before:border-text before:transition-all before:content-[''] hover:before:scale-x-100 active:before:scale-x-100 md:text-lg md:before:scale-x-0 md:before:border-b-2">
                                             Download my CV
                                         </button>
