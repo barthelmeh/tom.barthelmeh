@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faInstagram, faLinkedin, faFacebook} from "@fortawesome/free-brands-svg-icons";
 
-import {LinkedInURL, GithubURL, InstagramURL} from "./Links.tsx";
+import {LinkedInURL, GithubURL, InstagramURL, FacebookURL} from "./Links.tsx";
 
 const NavBar = () => {
 
@@ -16,6 +16,9 @@ const NavBar = () => {
                     </a>
                     <a href={GithubURL} target="_blank">
                         <FontAwesomeIcon icon={faGithub} size="xl" />
+                    </a>
+                    <a href={FacebookURL} target="_blank">
+                        <FontAwesomeIcon icon={faFacebook} size="xl" />
                     </a>
                     <a href={InstagramURL} target="_blank">
                         <FontAwesomeIcon icon={faInstagram} size="xl" />
