@@ -13,14 +13,14 @@ const HomePage = () => {
                         <NavBar />
 
                         <div className="flex flex-col items-center justify-start w-full mb-16">
-                            <div className="flex flex-col items-center justify-center w-full mb-12 px-4 sm:px-12">
+                            <div className="flex flex-col items-center justify-center w-full mb-24 px-4 sm:px-12">
                                 <div className="flex flex-col items-center justify-center mt-16 sm:mt-18 md:mt-24">
                                     <h1 className="font-display mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-6xl lg:text-8xl">
                                         Tom Barthelmeh
                                     </h1>
 
                                     <p className="font-display tracking-tight text-lg">
-                                        Software Engineering student at UC
+                                        Fourth year Software Engineering student at UC
                                     </p>
                                 </div>
 
