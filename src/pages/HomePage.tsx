@@ -1,6 +1,7 @@
 import NavBar from '../components/NavBar';
 import CreativePortfolio from "../components/CreativePortfolio";
 import Contact from "../components/Contact";
+import Resume from "../storage/Tom_Barthelmeh_Resume.pdf"
 
 const HomePage = () => {
 
@@ -24,7 +25,7 @@ const HomePage = () => {
                                 </div>
 
                                 <div className="flex flex-col items-center justify-center my-12 sm:my-14 md:my-20">
-                                    <a href="../storage/Tom_Barthelmeh_Resume.pdf" download="Tom_Barthelmeh_Resume.pdf">
+                                    <a href={Resume} download="Tom_Barthelmeh_Resume.pdf">
                                         <button className="relative animate-slide-down rounded font-bold font-display [animation-delay:1.5s] before:absolute before:border-black before:left-0 before:top-0 before:h-full before:w-full before:border-b before:border-text before:transition-all before:content-[''] hover:before:scale-x-100 active:before:scale-x-100 md:text-lg md:before:scale-x-0 md:before:border-b-2">
                                             Download my CV
                                         </button>
