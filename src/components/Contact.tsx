@@ -9,7 +9,7 @@ const Contact = () => {
 
             <div className="grid grid-cols-3 w-[75%] p-6 space-y-6">
 
-                <span className="col-span-3 font-display lg:text-xl">
+                <span className="col-span-3 flex justify-center items-center font-display lg:text-xl">
                     tom.barthelmeh@gmail.com
                 </span>
 

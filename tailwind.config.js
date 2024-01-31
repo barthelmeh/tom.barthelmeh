@@ -9,6 +9,19 @@ export default {
       fontFamily: {
         display: ["Poppins", "sans-serif"],
       },
+
+      animation: {
+        "fade-in": "fade-in .5s both",
+        "slow-fade-in": "fade-in 1.75s both"
+      },
+
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
+      }
+
     },
     screens: {
       xs: "480px",

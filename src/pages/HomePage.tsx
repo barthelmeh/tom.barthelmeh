@@ -1,7 +1,11 @@
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCircleArrowDown} from "@fortawesome/free-solid-svg-icons";
+
 import NavBar from '../components/NavBar';
 import CreativePortfolio from "../components/CreativePortfolio";
 import Contact from "../components/Contact";
 import Resume from "../storage/Tom_Barthelmeh_Resume.pdf"
+import RevealOnScroll from "../components/RevealOnScroll.tsx";
 
 const HomePage = () => {
 
@@ -33,11 +37,21 @@ const HomePage = () => {
                                 </div>
                             </div>
 
-                            <CreativePortfolio />
+                            <div className="animate-slow-fade-in my-12 md:my-28">
+                                <FontAwesomeIcon className="animate-bounce" icon={faCircleArrowDown} size="2x" />
+                            </div>
 
-                            <div className="h-[10vh]"></div>
-                            <Contact />
-                            <div className="h-[10vh]"></div>
+                            <RevealOnScroll>
+                                <CreativePortfolio />
+                            </RevealOnScroll>
+
+                            <div className="h-[15vh]"></div>
+
+                            <RevealOnScroll>
+                                <Contact />
+                            </RevealOnScroll>
+
+                            <div className="h-[15vh]"></div>
 
                         </div>
                     </div>
