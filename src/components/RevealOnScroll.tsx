@@ -16,7 +16,7 @@ const RevealOnScroll = ({ children }: iRevealProps) => {
                     setVisible(true);
                     observer.unobserve(entry.target);
                 }
-            }, { rootMargin: '-200px'}
+            }, { rootMargin: '-200px', root: null }
         );
         if(ref.current) {
             observer.observe(ref.current);
