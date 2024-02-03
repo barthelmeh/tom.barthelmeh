@@ -16,7 +16,7 @@ const RevealOnScroll = ({ children }: iRevealProps) => {
                     setVisible(true);
                     observer.unobserve(entry.target);
                 }
-            }, { rootMargin: '0px', root: null, threshold: 0.1 }
+            }, { rootMargin: '0px', root: null, threshold: 0.4}
         );
         if(ref.current) {
             observer.observe(ref.current);
@@ -25,7 +25,7 @@ const RevealOnScroll = ({ children }: iRevealProps) => {
         return () => observer.disconnect();
     }, []);
 
-    const classes: string = `${visible ? 'animate-slow-fade-in' : 'opacity-0'}`;
+    const classes: string = `${visible ? 'animate-reveal-on-scroll' : 'opacity-0'}`;
 
     return (
         <div ref={ref} className={classes}>

@@ -5,7 +5,6 @@ import NavBar from '../components/NavBar';
 import CreativePortfolio from "../components/CreativePortfolio";
 import Contact from "../components/Contact";
 import Resume from "../storage/Tom_Barthelmeh_Resume.pdf"
-import RevealOnScroll from "../components/RevealOnScroll.tsx";
 
 const HomePage = () => {
 
@@ -41,15 +40,11 @@ const HomePage = () => {
                                 <FontAwesomeIcon className="animate-bounce" icon={faCircleArrowDown} size="2x" />
                             </div>
 
-                            <RevealOnScroll>
-                                <CreativePortfolio />
-                            </RevealOnScroll>
+                            <CreativePortfolio />
 
                             <div className="h-[15vh]"></div>
 
-                            <RevealOnScroll>
-                                <Contact />
-                            </RevealOnScroll>
+                            <Contact />
 
                             <div className="h-[15vh]"></div>
 

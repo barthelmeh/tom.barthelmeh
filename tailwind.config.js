@@ -12,13 +12,20 @@ export default {
 
       animation: {
         "fade-in": "fade-in .5s both",
-        "slow-fade-in": "fade-in 1.75s both"
+        "slow-fade-in": "fade-in 1.75s both",
+        "reveal-on-scroll": "slide-up 1.5s both"
       },
 
       keyframes: {
         "fade-in": {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 }
+        },
+        "slide-up": {
+          "0%": { transform: "translateY(3rem)", opacity: 0 },
+          "33%": { opacity: 0.75 },
+          "50%": { opacity: 1 },
+          "100%": { transform: "translateY(0)" }
         }
       }
 
