@@ -5,7 +5,7 @@ const MirageAI = () => {
                 MirageAI
             </span>
 
-            <span className="font-display w-full">
+            <span className="font-display w-full text-center">
                 Automated creative content using AI and prompt engineering
             </span>
 

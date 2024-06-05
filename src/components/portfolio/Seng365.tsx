@@ -5,7 +5,7 @@ const Seng365 = () => {
                 Seng365
             </span>
 
-            <span className="font-display w-full">
+            <span className="font-display w-full text-center">
                 Movie critic service that required an API built using Typescript, NodeJS, and MySQL with a front-end
                 designed using React, Typescript, HTML, and CSS.
             </span>

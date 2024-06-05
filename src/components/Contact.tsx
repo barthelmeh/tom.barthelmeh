@@ -3,7 +3,7 @@ import RevealOnScroll from "./RevealOnScroll.tsx";
 
 const Contact = () => {
     return (
-        <div className="flex flex-col justify-center items-center px-4 h-[50vh] mb-4">
+        <div className="flex flex-col justify-center text-center items-center px-4 h-[50vh] mb-4">
             <RevealOnScroll>
                 <span className="font-display tracking-wider text-xl md:text-2xl lg:text-5xl">
                     Don't hesitate to get in contact

@@ -5,7 +5,7 @@ const Seng302 = () => {
                 Seng302
             </span>
 
-            <span className="font-display w-full">
+            <span className="font-display w-full text-center">
                 Full-year 7-person group project with Java, Spring, Scrum, and CI.
             </span>
 

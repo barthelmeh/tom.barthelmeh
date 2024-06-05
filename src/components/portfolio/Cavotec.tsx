@@ -8,7 +8,7 @@ const Cavotec = () => {
                 2023-2024
             </span>
 
-            <span className="font-display w-full">
+            <span className="font-display w-full text-center">
                 Custom machine learning models trained on hand-annotated data to detect and provide feedback on
                 obstructions on a ship's hull. This project used OpenCV, YOLOv8, Tensorflow, and OPC UA.
             </span>
