@@ -6,89 +6,16 @@ import CreativePortfolio from "../components/CreativePortfolio";
 import Contact from "../components/Contact";
 import Resume from "../storage/Tom_Barthelmeh_Resume.pdf"
 import React from "react";
-import {motion, useMotionValue, useSpring} from "framer-motion";
+import CustomCursor from "../components/CustomCursor.tsx";
 
 const HomePage = () => {
 
     const [blending, setBlending] = React.useState(false);
 
-    const initialCursorSize = 16;
-    const blendingCursorSize = 64;
-    const clickDecreaseAmount = 0.75;
-
-    const cursorSize = useMotionValue(initialCursorSize);
-    const cursorX = useMotionValue(0);
-    const cursorY = useMotionValue(0);
-
-    const springConfig = { damping: 40, stiffness: 550 };
-    const cursorXSpring = useSpring(cursorX, springConfig);
-    const cursorYSpring = useSpring(cursorY, springConfig);
-    const cursorSizeSpring = useSpring(cursorSize, springConfig);
-
-    const textEnter = () => {
-        setBlending(true);
-        cursorSize.set(blendingCursorSize);
-    }
-
-    const textLeave = () => {
-        setBlending(false);
-        cursorSize.set(initialCursorSize);
-    }
-
-
-    React.useEffect(() => {
-
-        const mouseMove = (e: MouseEvent) => {
-            cursorX.set(e.clientX - cursorSize.get()/2);
-            cursorY.set(e.clientY - cursorSize.get()/2);
-        }
-
-        const mouseDown = () => {
-            const prevCursorSize = cursorSize.get();
-            const mouseX = cursorX.get() + prevCursorSize/2;
-            const mouseY = cursorY.get() + prevCursorSize/2;
-            const newCursorSize = cursorSize.get() * clickDecreaseAmount;
-            cursorSize.set(newCursorSize);
-
-            cursorX.set(mouseX - newCursorSize/2);
-            cursorY.set(mouseY - newCursorSize/2);
-        }
-        const mouseUp = () => {
-            const prevCursorSize = cursorSize.get();
-            const mouseX = cursorX.get() + prevCursorSize/2;
-            const mouseY = cursorY.get() + prevCursorSize/2;
-            const newCursorSize = cursorSize.get() / clickDecreaseAmount;
-            cursorSize.set(newCursorSize);
-
-            cursorX.set(mouseX - newCursorSize/2);
-            cursorY.set(mouseY - newCursorSize/2);
-        }
-
-        window.addEventListener("pointermove", mouseMove);
-        window.addEventListener("mousedown", mouseDown);
-        window.addEventListener("mouseup", mouseUp);
-
-        return () => {
-            window.removeEventListener("pointermove", mouseMove);
-            window.removeEventListener("mousedown", mouseDown);
-            window.removeEventListener("mouseup", mouseUp);
-        }
-    }, [cursorX, cursorY, cursorSize]);
-
     return (
         <div>
-            <div>
-                <motion.div
-                    className={`z-20 fixed cursor ${blending ? "mix-blend-difference bg-white" : ""}`}
-                    style={{
-                        translateX: cursorXSpring,
-                        translateY: cursorYSpring,
-                        height: cursorSizeSpring,
-                        width: cursorSizeSpring,
-                    }}
-                />
-            </div>
 
+            <CustomCursor blending={blending} />
 
             <div className="bg-background m-auto w-full">
                 <div className=" flex justify-center items-center">
@@ -98,7 +25,7 @@ const HomePage = () => {
                         <div className="flex flex-col items-center justify-start w-full mb-16">
                             <div className="flex flex-col items-center justify-center w-full mb-24 px-4 sm:px-12">
                                 <div className="flex flex-col items-center justify-center mt-16 sm:mt-18 md:mt-24">
-                                    <h1 className="font-display mb-2 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-6xl lg:text-8xl bg-white" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                                    <h1 className="font-display mb-2 text-4xl font-extrabold leading-none tracking-tight text-black md:text-6xl lg:text-8xl bg-white" onMouseEnter={() => setBlending(true)} onMouseLeave={() => setBlending(false)}>
                                         Tom Barthelmeh
                                     </h1>
 
