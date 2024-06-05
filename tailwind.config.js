@@ -10,6 +10,12 @@ export default {
         display: ["Poppins", "sans-serif"],
       },
 
+      colors: {
+        primary: "#111827",
+        secondary: "#008DD5",
+        background: "#FFFFFF"
+      },
+
       animation: {
         "fade-in": "fade-in .5s both",
         "slow-fade-in": "fade-in 1.75s both",

@@ -1,9 +1,9 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/*#root {*/
+/*  max-width: 1280px;*/
+/*  margin: 0 auto;*/
+/*  padding: 2rem;*/
+/*  text-align: center;*/
+/*}*/
 
 .logo {
   height: 6em;
@@ -38,7 +38,7 @@
 }
 
 .cursor {
-  background-color: black;
+  background-color: #111827;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -52,6 +52,7 @@
 * {
   cursor: none;
 }
+
 button:hover {
   cursor: none;
 }
