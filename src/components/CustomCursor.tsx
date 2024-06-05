@@ -26,7 +26,7 @@ const CustomCursor = (props: cursorProps) => {
         } else {
             cursorSize.set(initialCursorSize);
         }
-    }, [props.blending]);
+    }, [props.blending, cursorSize]);
 
     React.useEffect(() => {
 
