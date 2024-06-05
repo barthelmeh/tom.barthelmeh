@@ -5,15 +5,61 @@ import NavBar from '../components/NavBar';
 import CreativePortfolio from "../components/CreativePortfolio";
 import Contact from "../components/Contact";
 import Resume from "../storage/Tom_Barthelmeh_Resume.pdf"
+import React from "react";
+import {motion, useMotionValue, useSpring} from "framer-motion";
 
 const HomePage = () => {
 
+    const cursorSize = useMotionValue(16);
+    const cursorX = useMotionValue(0);
+    const cursorY = useMotionValue(0);
+
+    const springConfig = { damping: 40, stiffness: 550 };
+    const cursorXSpring = useSpring(cursorX, springConfig);
+    const cursorYSpring = useSpring(cursorY, springConfig);
+    const cursorSizeSpring = useSpring(cursorSize, springConfig);
+
+
+    React.useEffect(() => {
+
+        const mouseMove = (e: MouseEvent) => {
+            cursorX.set(e.clientX - cursorSize.get()/2);
+            cursorY.set(e.clientY - cursorSize.get()/2);
+        }
+
+        const mouseDown = () => {
+            cursorSize.set(10);
+        }
+        const mouseUp = () => {
+            cursorSize.set(16);
+        }
+
+        window.addEventListener("mousemove", mouseMove);
+        window.addEventListener("mousedown", mouseDown);
+        window.addEventListener("mouseup", mouseUp);
+
+        return () => {
+            window.removeEventListener("mousemove", mouseMove);
+        }
+    }, [cursorX, cursorY]);
+
     return (
         <div>
+
+            <motion.div
+                className='cursor'
+                style={{
+                    translateX: cursorXSpring,
+                    translateY: cursorYSpring,
+                    height: cursorSizeSpring,
+                    width: cursorSizeSpring,
+                }}
+            />
+
             <div className="bg-primary w-full overflow-hidden">
                 <div className=" flex justify-center items-center">
                     <div className="xl:max-w-[1280px] w-full">
-                        <NavBar />
+                        <NavBar/>
 
                         <div className="flex flex-col items-center justify-start w-full mb-16">
                             <div className="flex flex-col items-center justify-center w-full mb-24 px-4 sm:px-12">
@@ -29,7 +75,8 @@ const HomePage = () => {
 
                                 <div className="flex flex-col items-center justify-center my-12 sm:my-14 md:my-20">
                                     <a href={Resume} download="Tom_Barthelmeh_Resume.pdf">
-                                        <button className="relative animate-slide-down rounded font-bold font-display [animation-delay:1.5s] before:absolute before:border-black before:left-0 before:top-0 before:h-full before:w-full before:border-b before:border-text before:transition-all before:content-[''] hover:before:scale-x-100 active:before:scale-x-100 md:text-lg md:before:scale-x-0 md:before:border-b-2">
+                                        <button
+                                            className="relative animate-slide-down rounded font-bold font-display [animation-delay:1.5s] before:absolute before:border-black before:left-0 before:top-0 before:h-full before:w-full before:border-b before:border-text before:transition-all before:content-[''] hover:before:scale-x-100 active:before:scale-x-100 md:text-lg md:before:scale-x-0 md:before:border-b-2">
                                             Download my CV
                                         </button>
                                     </a>
@@ -37,14 +84,14 @@ const HomePage = () => {
                             </div>
 
                             <div className="animate-slow-fade-in my-12 md:my-28">
-                                <FontAwesomeIcon className="animate-bounce" icon={faCircleArrowDown} size="2x" />
+                                <FontAwesomeIcon className="animate-bounce" icon={faCircleArrowDown} size="2x"/>
                             </div>
 
-                            <CreativePortfolio />
+                            <CreativePortfolio/>
 
                             <div className="h-[15vh]"></div>
 
-                            <Contact />
+                            <Contact/>
 
                             <div className="h-[15vh]"></div>
 
