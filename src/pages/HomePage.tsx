@@ -14,8 +14,8 @@ const HomePage = () => {
 
     return (
         <div>
-
-            <CustomCursor blending={blending} />
+            {/* Hide cursor on mobile screen */}
+            {window.screen.width > 768 && <CustomCursor blending={blending} />}
 
             <div className="bg-background m-auto w-full">
                 <div className=" flex justify-center items-center">
