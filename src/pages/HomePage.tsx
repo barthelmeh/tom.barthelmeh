@@ -3,46 +3,25 @@ import {faCircleArrowDown} from "@fortawesome/free-solid-svg-icons";
 
 import NavBar from '../components/NavBar';
 import CreativePortfolio from "../components/CreativePortfolio";
-import Contact from "../components/Contact";
-import Resume from "../storage/Tom_Barthelmeh_Resume.pdf"
-import React from "react";
-import CustomCursor from "../components/CustomCursor.tsx";
+import Contact from "../components/Contact.tsx";
+import Footer from "../components/Footer.tsx";
+import ScrollbarTop from "../components/ScrollbarTop.tsx";
+import Title from "../components/Title.tsx";
 
 const HomePage = () => {
 
-    const [blending, setBlending] = React.useState(false);
-
     return (
         <div>
-            {/* Hide cursor on mobile screen */}
-            {window.screen.width > 768 && <CustomCursor blending={blending} />}
+            <ScrollbarTop />
 
             <div className="bg-background m-auto w-full">
                 <div className=" flex justify-center items-center">
-                    <div className="xl:max-w-[1280px] w-full md:px-16 py-6 px-8">
+                    <div className="xl:max-w-[1280px] w-full md:px-16 pt-6 pb-2 px-8">
                         <NavBar/>
 
                         <div className="flex flex-col items-center justify-start w-full mb-16">
-                            <div className="flex flex-col items-center justify-center w-full mb-24 px-4 sm:px-12">
-                                <div className="flex flex-col items-center justify-center mt-16 sm:mt-18 md:mt-24">
-                                    <h1 className="font-display mb-2 text-4xl font-extrabold leading-none tracking-tight text-black md:text-6xl lg:text-8xl bg-white" onMouseEnter={() => setBlending(true)} onMouseLeave={() => setBlending(false)}>
-                                        Tom Barthelmeh
-                                    </h1>
 
-                                    <p className="font-display tracking-tight text-lg">
-                                        Fourth year Software Engineering student at UC
-                                    </p>
-                                </div>
-
-                                <div className="flex flex-col items-center justify-center my-12 sm:my-14 md:my-20">
-                                    <a href={Resume} download="Tom_Barthelmeh_Resume.pdf">
-                                        <button
-                                            className="relative animate-slide-down rounded font-bold font-display [animation-delay:1.5s] before:absolute before:border-black before:left-0 before:top-0 before:h-full before:w-full before:border-b before:border-text before:transition-all before:content-[''] hover:before:scale-x-100 active:before:scale-x-100 md:text-lg md:before:scale-x-0 md:before:border-b-2">
-                                            Download my CV
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
+                            <Title />
 
                             <div className="animate-slow-fade-in my-12 md:my-28">
                                 <FontAwesomeIcon className="animate-bounce" icon={faCircleArrowDown} size="2x"/>
@@ -59,6 +38,9 @@ const HomePage = () => {
                             <div className="h-[15vh]"></div>
 
                         </div>
+
+                        <Footer />
+
                     </div>
                 </div>
             </div>
