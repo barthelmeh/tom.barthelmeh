@@ -9,13 +9,13 @@ const Experience = (props: Experience) => {
             />
 
             <div className='flex flex-col col-span-6'>
-                <h1 className='font-title text-xl font-bold'>
+                <h1 className='font-title sm:text-xl font-bold'>
                     {props.title}
                 </h1>
-                <p>
+                <p className='text-sm sm:text-base'>
                     {props.company}
                 </p>
-                <p className='text-slate-500 text-xs'>
+                <p className='text-slate-500 text-[0.6rem] sm:text-xs'>
                     {`${props.from} → ${props.to}`}
                 </p>
             </div>
