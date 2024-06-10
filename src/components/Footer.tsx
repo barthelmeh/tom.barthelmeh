@@ -1,7 +1,7 @@
 import {RepositoryURL} from "./Links.tsx";
 const Footer = () => {
     return (
-        <div className="border-t border-slate-300 py-4 text-lg tracking-tight font-accent flex justify-between">
+        <div className="border-t border-slate-300 py-4 text-sm md:text-lg tracking-tight font-accent flex justify-between">
             <p>
                 tom.barthelmeh@gmail.com
             </p>
