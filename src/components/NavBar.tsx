@@ -1,24 +1,16 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-
-import {LinkedInURL, GithubURL, InstagramURL} from "./Links.tsx";
+import {LinkedInURL, GithubURL} from "./Links.tsx";
 
 const NavBar = () => {
 
     return (
         <div>
-            <nav className="w-full flex justify-end items-center navbar">
-                {/* Logo */}
-                <div className="flex space-x-2">
-                    { /* Icons */ }
-                    <a href={LinkedInURL} target="_blank">
-                        <FontAwesomeIcon icon={faLinkedin} size="xl" />
+            <nav className="w-full flex justify-end navbar text-xl font-accent text-black">
+                <div className="flex space-x-6 justify-between">
+                    <a href={LinkedInURL} target="_blank" className="relative rounded [animation-delay:1.5s] before:absolute before:border-black before:left-0 before:top-0 before:h-full before:w-full before:border-b before:border-text before:transition-all before:content-[''] hover:before:scale-x-100 active:before:scale-x-100 md:before:scale-x-0 md:before:border-b-2">
+                        linkedin
                     </a>
-                    <a href={GithubURL} target="_blank">
-                        <FontAwesomeIcon icon={faGithub} size="xl" />
-                    </a>
-                    <a href={InstagramURL} target="_blank">
-                        <FontAwesomeIcon icon={faInstagram} size="xl" />
+                    <a href={GithubURL} target="_blank" className="relative rounded [animation-delay:1.5s] before:absolute before:border-black before:left-0 before:top-0 before:h-full before:w-full before:border-b before:border-text before:transition-all before:content-[''] hover:before:scale-x-100 active:before:scale-x-100 md:before:scale-x-0 md:before:border-b-2">
+                        github
                     </a>
                 </div>
             </nav>

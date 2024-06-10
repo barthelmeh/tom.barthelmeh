@@ -37,18 +37,6 @@
   padding: 2em;
 }
 
-.cursor {
-  background-color: black;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 2;
-}
-
 * {
   cursor: none;
 }

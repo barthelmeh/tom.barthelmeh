@@ -7,13 +7,15 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ["Poppins", "sans-serif"],
+        title: ["Poppins", "sans-serif"],
+        accent: ["Kanit", "sans-serif"],
+        body: ["Nunito Sans", "sans-serif"]
       },
 
       colors: {
-        primary: "#111827",
-        secondary: "#008DD5",
-        background: "#FFFFFF"
+        primary: "#E3B6FF",
+        secondary: "#61A0FF",
+        background: "#F2F6FF"
       },
 
       animation: {
