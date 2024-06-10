@@ -3,21 +3,18 @@ import ProjectsJSON from "../../assets/ProjectsJSON.tsx";
 
 const Projects = () => {
     return (
-        <div className="flex flex-col justify-center w-full h-screen">
-            <div className="flex items-start justify-start w-full p-4">
+        <div className="flex flex-col w-full h-full">
+            <div className="flex items-start justify-start w-full py-4">
                 <h1 className="font-title font-bold text-3xl">
                     Projects
                 </h1>
             </div>
 
-            <div className='grid grid-cols-2 gap-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
                 {ProjectsJSON.map((project) => (
-                    <ProjectCard title={project.title} description={project.description} tools={project.tools} />
+                    <ProjectCard key={project.title} title={project.title} description={project.description} tools={project.tools} />
                 ))}
             </div>
-
-
-
         </div>
     )
 }

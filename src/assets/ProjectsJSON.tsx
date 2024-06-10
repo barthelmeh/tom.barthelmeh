@@ -27,7 +27,7 @@ const ProjectsJSON: ProjectType[] = [
     {
         title: 'Automatic FAT',
         description: 'Application to automatically display and run tests on Cavotec\'s MoorMaster and produce JSON results',
-        tools: ['OpenCV', 'YOLOv8', 'OPC UA']
+        tools: ['Django', 'Javascript', 'HTML', 'CSS']
     },
 ]
 
