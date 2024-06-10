@@ -70,7 +70,7 @@ const CustomCursor = (props: cursorProps) => {
     return (
         <div>
             <motion.div
-                className={`z-20 fixed cursor ${props.blending ? "mix-blend-difference bg-white" : ""}`}
+                className={`w-16 h-16 rounded-full fixed top-0 left-0 pointer-events-none z-20 ${props.blending ? "mix-blend-difference bg-primary" : "bg-gradient-to-bl from-primary to-secondary"}`}
                 style={{
                     translateX: cursorXSpring,
                     translateY: cursorYSpring,
