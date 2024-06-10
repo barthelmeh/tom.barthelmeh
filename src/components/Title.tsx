@@ -9,7 +9,7 @@ const Title = () => {
 
     const [blending, setBlending] = React.useState(false);
     return (
-        <div className="flex flex-col items-center w-full h-screen mt-12 md:mt-20">
+        <div className="flex flex-col items-center w-full md:h-screen h-full mb-20 md:mb-0 mt-12 md:mt-20">
             {/* Hide cursor on mobile screen */}
             {window.screen.width > 768 && <CustomCursor blending={blending}/>}
 

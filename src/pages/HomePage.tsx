@@ -12,19 +12,20 @@ const HomePage = () => {
             <ScrollbarTop />
 
             <div className="bg-background m-auto w-full">
-                <div className="xl:max-w-[1280px] h-full w-full md:px-16 pt-6 pb-2 px-12">
-                    <NavBar/>
+                <div className='flex justify-center items-center'>
+                    <div className="xl:max-w-[1280px] h-full w-full md:px-32 pt-6 pb-2 px-16">
+                        <NavBar/>
 
-                    <div className="px-32 w-full mb-12">
-                        <Title />
+                        <div className="w-full mb-12">
+                            <Title/>
 
-                        <Projects />
+                            <Projects/>
 
-                        <Experiences />
+                            <Experiences/>
+                        </div>
+
+                        <Footer/>
                     </div>
-
-                    <Footer />
-
                 </div>
             </div>
         </div>
