@@ -16,7 +16,7 @@ const HomePage = () => {
                     <div className="xl:max-w-[1280px] h-full w-full md:px-32 sm:px-8 px-4 pt-6 pb-2 ">
                         <NavBar/>
 
-                        <div className="w-full mb-12">
+                        <div className="w-full mb-8">
                             <Title/>
 
                             <Projects/>

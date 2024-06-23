@@ -12,9 +12,17 @@ const Experience = (props: Experience) => {
                 <h1 className='font-title sm:text-xl font-bold'>
                     {props.title}
                 </h1>
+
                 <p className='text-sm sm:text-base'>
                     {props.company}
                 </p>
+
+                {props.responsibilities?.map((responsibility) => (
+                    <p className='text-slate-700 font-body italic text-xs sm:text-sm'>
+                        • {responsibility}
+                    </p>
+                ))}
+
                 <p className='text-slate-500 text-[0.6rem] sm:text-xs'>
                     {`${props.from} → ${props.to}`}
                 </p>

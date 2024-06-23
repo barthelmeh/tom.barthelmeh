@@ -4,7 +4,8 @@ const ExperiencesJSON: Experience[] = [
         company: 'University of Canterbury',
         company_image_url: 'UC_logo.png',
         from: 'Feb 2024',
-        to: 'Present'
+        to: 'Present',
+        responsibilities: ['Software Engineering Project Workshop', 'Web Computing Architecture']
     },
     {
         title: 'Software Engineer Intern',
@@ -12,6 +13,14 @@ const ExperiencesJSON: Experience[] = [
         company_image_url: 'cavotec_logo.png',
         from: 'Nov 2022',
         to: 'Feb 2024'
+    },
+    {
+        title: 'Mathematics Tutor',
+        company: 'Numberworks\'n\'Words',
+        company_image_url: 'numberworks_n_words_logo.png',
+        from: 'Jan 2022',
+        to: 'Nov 2022',
+        responsibilities: ['Year 8 to Year 13']
     },
 ];
 

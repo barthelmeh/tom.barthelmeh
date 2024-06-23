@@ -3,5 +3,6 @@ type Experience = {
     company: string,
     company_image_url: string,
     from: string,
-    to: string
+    to: string,
+    responsibilities?: string[]
 }

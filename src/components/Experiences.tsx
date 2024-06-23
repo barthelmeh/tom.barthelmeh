@@ -12,7 +12,9 @@ const Experiences = () => {
 
             <div className='divide-y divide-slate-200'>
                 {ExperiencesJSON.map((experience) => (
-                    <Experience key={experience.company} title={experience.title} company={experience.company} from={experience.from} to={experience.to} company_image_url={experience.company_image_url}/>
+                    <Experience key={experience.company} title={experience.title} company={experience.company}
+                                from={experience.from} to={experience.to} responsibilities={experience.responsibilities}
+                                company_image_url={experience.company_image_url}/>
                 ))}
             </div>
 
