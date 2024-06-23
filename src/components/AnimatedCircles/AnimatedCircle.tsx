@@ -12,9 +12,8 @@ const AnimatedCircle = (props: animatedProps) => {
     const startColour = useMotionValue(COLOURS[0]);
     const endColour = useMotionValue(COLOURS[COLOURS.length-1])
     const background = useMotionTemplate`linear-gradient(${startColour}, ${endColour})`;
-    const circleSize = `w-${props.size} h-${props.size}`
-    const animationRange = [-150, 150 - props.size*4];
-    console.log(animationRange);
+    const animationRange = [-150, 150 - props.size];
+
     React.useEffect(() => {
         animate(startColour, COLOURS, {
             ease: "easeInOut",
@@ -33,12 +32,14 @@ const AnimatedCircle = (props: animatedProps) => {
 
     return (
         <motion.div
-            className={`rounded-full pointer-events-none ${circleSize}`}
+            className={`rounded-full pointer-events-none`}
             animate={{
                 y: animationRange,
             }}
             style={{
-                background
+                background,
+                width: `${props.size}px`,
+                height: `${props.size}px`
             }}
             transition={{
                 type: "tween",
