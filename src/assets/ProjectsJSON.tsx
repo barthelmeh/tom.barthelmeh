@@ -1,7 +1,7 @@
 const ProjectsJSON: ProjectType[] = [
     {
         title: 'ReviseBot',
-        description: 'An AI-powered revision assistant to help students study for exams',
+        description: 'An AI-powered revision assistant to help students study for exams.',
         tools: ['React', 'TailwindCSS', 'OpenAPI'],
     },
     {
@@ -21,7 +21,7 @@ const ProjectsJSON: ProjectType[] = [
     },
     {
         title: 'SwapBytes',
-        description: 'A peer-to-peer application that allows users to create chat rooms and swap files',
+        description: 'A peer-to-peer application that allows users to create chat rooms and swap files.',
         tools: ['Rust', 'Libp2p', 'Kademlia']
     },
     {
