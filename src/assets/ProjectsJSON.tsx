@@ -1,33 +1,33 @@
 const ProjectsJSON: ProjectType[] = [
     {
-        title: 'Movie Critic',
-        description: 'A simple iMDb-like application to view, rate, and publish films',
-        tools: ['React', 'Tailwind', 'Express']
+        title: 'ReviseBot',
+        description: 'An AI-powered revision assistant to help students study for exams',
+        tools: ['React', 'TailwindCSS', 'OpenAPI'],
+    },
+    {
+        title: 'FlatMates',
+        description: 'The ultimate solution for managing shared living spaces.',
+        tools: ['React', 'TailwindCSS', 'Rust']
     },
     {
         title: 'ReviewBot',
-        description: 'A Slack app for generating and tagging random reviewers for an agile team',
+        description: 'A Slack app for generating and tagging random reviewers for an agile team.',
         tools: ['Typescript', 'SlackCLI']
     },
     {
-        title: 'Sporting Social Platform',
-        description: 'A social media web application for sporting events',
-        tools: ['Java', 'Spring', 'Scrum']
+        title: 'Biophilia Visualiser',
+        description: 'A mobile application to visualise stress levels. Built for Scion, a crown research institute in New Zealand.',
+        tools: ['React Native', 'NativeWind', 'Express', 'Azure']
     },
     {
-        title: 'Internal Website',
-        description: 'A revamp of Cavotec’s internal website for creating parts',
-        tools: ['React', 'Tailwind', 'PHP']
+        title: 'SwapBytes',
+        description: 'A peer-to-peer application that allows users to create chat rooms and swap files',
+        tools: ['Rust', 'Libp2p', 'Kademlia']
     },
     {
         title: 'Hull Obstruction Detection',
         description: 'Custom machine learning models to detect and provide feedback on obstructions on a ship\'s hull.',
         tools: ['OpenCV', 'YOLOv8', 'OPC UA']
-    },
-    {
-        title: 'Automatic FAT',
-        description: 'Application to automatically display and run tests on Cavotec\'s MoorMaster and produce JSON results',
-        tools: ['Django', 'Javascript', 'HTML', 'CSS']
     },
 ]
 
