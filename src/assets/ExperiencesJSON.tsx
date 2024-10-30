@@ -5,14 +5,14 @@ const ExperiencesJSON: Experience[] = [
         company_image_url: 'couchdrop_logo.png',
         from: 'Nov 2024',
         to: 'Present',
-        // responsibilities: ['SFTP', 'Cloud']
+        responsibilities: ['SFTP']
     },
     {
         title: 'Tutor',
         company: 'University of Canterbury',
         company_image_url: 'UC_logo.png',
         from: 'Feb 2024',
-        to: 'Present',
+        to: 'Nov 2024',
         responsibilities: ['Software Engineering Project Workshop', 'Web Computing Architecture']
     },
     {
