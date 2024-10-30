@@ -1,5 +1,13 @@
 const ExperiencesJSON: Experience[] = [
     {
+        title: 'Full Stack Software Engineer',
+        company: 'Couchdrop',
+        company_image_url: 'couchdrop_logo.png',
+        from: 'Nov 2024',
+        to: 'Present',
+        // responsibilities: ['SFTP', 'Cloud']
+    },
+    {
         title: 'Tutor',
         company: 'University of Canterbury',
         company_image_url: 'UC_logo.png',
