@@ -10,6 +10,11 @@ const ProjectsJSON: ProjectType[] = [
         tools: ['React', 'TailwindCSS', 'Rust']
     },
     {
+        title: 'Saffron',
+        description: 'A trustless secure escrow service run on the SecretNetwork blockchain to allow users to trade digital assets safely.\n Prize winner at HackSecret 4.',
+        tools: ['Rust', 'CosmWasm', 'SecretNetwork']
+    },
+    {
         title: 'ReviewBot',
         description: 'A Slack app for generating and tagging random reviewers for an agile team.',
         tools: ['Typescript', 'SlackCLI']
@@ -18,11 +23,6 @@ const ProjectsJSON: ProjectType[] = [
         title: 'Biophilia Visualiser',
         description: 'A mobile application to visualise stress levels. Built for Scion, a crown research institute in New Zealand.',
         tools: ['React Native', 'NativeWind', 'Express', 'Azure']
-    },
-    {
-        title: 'SwapBytes',
-        description: 'A peer-to-peer application that allows users to create chat rooms and swap files.',
-        tools: ['Rust', 'Libp2p', 'Kademlia']
     },
     {
         title: 'Hull Obstruction Detection',

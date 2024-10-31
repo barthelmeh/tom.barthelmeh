@@ -10,7 +10,7 @@ const Projects = () => {
                 </h1>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-8 whitespace-pre-line'>
                 {ProjectsJSON.map((project) => (
                     <ProjectCard key={project.title} title={project.title} description={project.description} tools={project.tools} />
                 ))}
