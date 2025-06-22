@@ -1,13 +1,8 @@
 const ProjectsJSON: ProjectType[] = [
     {
-        title: 'ReviseBot',
-        description: 'An AI-powered revision assistant to help students study for exams.',
-        tools: ['React', 'TailwindCSS', 'OpenAPI'],
-    },
-    {
-        title: 'FlatMates',
-        description: 'The ultimate solution for managing shared living spaces.',
-        tools: ['React', 'TailwindCSS', 'Rust']
+        title: 'quietCRM',
+        description: 'A simple bloat-free CRM for solo-makers',
+        tools: ['React', 'TypeScript', 'nodeJS', 'Fastify']
     },
     {
         title: 'Saffron',

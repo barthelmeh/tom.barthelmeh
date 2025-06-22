@@ -23,13 +23,12 @@ const Title = () => {
                 </h1>
                 {/*Description for larger screens*/}
                 {window.screen.width > 768 && <p className="font-body tracking-tight sm:text-lg lg:text-2xl sm:max-w-[70%] text-slate-500 z-10">
-                    I’m currently a fourth year Software Engineering student at the University of Canterbury. I have a
-                    passion in web development and solving challenging problems to produce real-world solutions.
+                    I’m currently a Fullstack Software Engineer at Couchdrop. I have a passion in web development and solving challenging problems to produce real-world solutions.
                 </p>}
 
                 {/*Description for smaller screens*/}
                 {window.screen.width <= 768 && <p className="font-body tracking-tight lg:text-2xl sm:max-w-[70%] text-slate-500 z-10">
-                    I’m currently a 4th year SENG student at the University of Canterbury.
+                    Fullstack software engineer
                 </p>}
             </div>
 
